@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/adobe/freyja-service/compare/v1.1.1...v1.1.2) (2024-01-09)
+
+
+### Bug Fixes
+
+* Fix .renovaterc + semantic release ([e726705](https://github.com/adobe/freyja-service/commit/e726705968d5373bc7d6fd1dc314321a6e45fe09))
+
 ## [1.1.1](https://github.com/adobe/freyja-service/compare/v1.1.0...v1.1.1) (2024-01-09)
 
 
