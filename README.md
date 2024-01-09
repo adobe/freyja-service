@@ -20,13 +20,20 @@ First, make sure you ahve this entry in your `~/.npmrc` file:
  @freyja:registry=https://artifactory-uw2.adobeitc.com/artifactory/api/npm/npm-freyja-release/
 ```
 Then, login to the registry, if you haven't done so:
+
+```bash
+npm login --registry https://artifactory-uw2.adobeitc.com/artifactory/api/npm/npm-freyja-release/
+```
+
+Finally, create your service with the following command:
+
 ```bash
 npm login --registry https://artifactory-uw2.adobeitc.com/artifactory/api/npm/npm-freyja-release/
 ```
 
 Finally, create your service with the following command:
 ```bash
-$ $ npm init @adobe/freyja-service
+$ $ npm init @freyja/freyja-service
 ```
 
 `create-freyja-service` will ask you a couple of questions and create a ready-to-go directory
