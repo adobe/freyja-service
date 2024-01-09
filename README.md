@@ -1,6 +1,6 @@
-# (Create) Franklin Service
+# (Create) Freyja Service
 
-> Bootstrap your Project Franklin service using `npm init @adobe/freyja-service`
+> Bootstrap your Project Freyja service using `npm init @adobe/freyja-service`
 
 ## Status
 [![codecov](https://img.shields.io/codecov/c/github/adobe/freyja-service.svg)](https://codecov.io/gh/adobe/freyja-service)
