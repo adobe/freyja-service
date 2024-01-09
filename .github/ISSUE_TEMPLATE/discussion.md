@@ -6,7 +6,7 @@ labels: question
 ---
 
 ## Overview
-whats' this discussion about?
+What's this discussion about?
 
 ## Details
 more details
