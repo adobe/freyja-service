@@ -21,7 +21,7 @@ commands:
           command: npm ci
       - run:
           name: prepare test git user
-          command: git config --global user.email "circleci@example.com" && git config --global user.name "CircleCi Build"
+          command: git config --global user.email "freyjabot@adobe.com" && git config --global user.name "Freyja Bot"
 
 jobs:
   build:
@@ -46,4 +46,5 @@ workflows:
   version: 2
   build:
     jobs:
-      - build
+      - build:
+          context: Freyja
