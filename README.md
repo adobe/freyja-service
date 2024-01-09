@@ -38,6 +38,8 @@ $ $ npm init @freyja/freyja-service
 
 `create-freyja-service` will ask you a couple of questions and create a ready-to-go directory
 
+**NOTE**: When prompted for the orgs, use `freyja` for npm and `adobe` for GitHub
+
 ## Development
 
 ### Build
