@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/adobe/freyja-service/compare/v1.0.3...v1.1.0) (2024-01-09)
+
+
+### Features
+
+* adjust template ([6b715a6](https://github.com/adobe/freyja-service/commit/6b715a64c72a51df03ed97c92fce7b3c95e7e616))
+
 ## [1.0.3](https://github.com/adobe/freyja-service/compare/v1.0.2...v1.0.3) (2024-01-09)
 
 
