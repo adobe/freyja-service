@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/adobe/freyja-service/compare/v1.0.2...v1.0.3) (2024-01-09)
+
+
+### Bug Fixes
+
+* adjust readme ([5733e80](https://github.com/adobe/freyja-service/commit/5733e808cad7d019cb54f0abebb8432c952ed8a9))
+
 ## [1.0.2](https://github.com/adobe/freyja-service/compare/v1.0.1...v1.0.2) (2024-01-09)
 
 
