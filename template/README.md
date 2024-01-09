@@ -19,6 +19,6 @@ For more, see the [API documentation](docs/API.md).
 
 ## Development
 
-### Deploying Franklin Service
+### Deploying Freyja Service
 
 All commits to main that pass the testing will be deployed automatically. All commits to branches that will pass the testing will get deployed as `/freyja/service@ci<num>` and tagged with the CI build number.
