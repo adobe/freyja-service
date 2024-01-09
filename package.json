@@ -1,6 +1,6 @@
 {
   "name": "@freyja/create-freyja-service",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": false,
   "description": "Create Freyja Service",
   "main": "src/index.js",

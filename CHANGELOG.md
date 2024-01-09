@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/adobe/freyja-service/compare/v1.0.1...v1.0.2) (2024-01-09)
+
+
+### Bug Fixes
+
+* Add freyja namespacing ([e8ce4d7](https://github.com/adobe/freyja-service/commit/e8ce4d7769e37c8ddd9a2f9da6c09d20e3aa90a9))
+
 ## [1.0.1](https://github.com/adobe/freyja-service/compare/v1.0.0...v1.0.1) (2024-01-09)
 
 
