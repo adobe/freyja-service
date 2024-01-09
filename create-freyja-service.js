@@ -18,6 +18,7 @@ import { fileURLToPath } from 'url';
 console.log('Creating a new Freyja Service');
 init(resolve(fileURLToPath(import.meta.url), '..'), {
   'dot-circleci/config.yml': (buf) => buf,
+  'dot-renovaterc.json': (buf) => buf,
   'dot-npmrc': (buf) => buf,
   'package.json': (buf, answers) => {
     const json = JSON.parse(buf.toString());

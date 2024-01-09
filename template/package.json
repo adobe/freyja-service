@@ -90,6 +90,6 @@
   },
   "lint-staged": {
     "*.js": "eslint",
-    "*.cjs": "eslint"
+    "!(dot-releaserc).cjs": "eslint"
   }
 }
