@@ -17,6 +17,8 @@ import { fileURLToPath } from 'url';
 // eslint-disable-next-line no-console
 console.log('Creating a new Freyja Service');
 init(resolve(fileURLToPath(import.meta.url), '..'), {
+  'dot-circleci/config.yml': (buf) => buf,
+  'dot-npmrc': (buf) => buf,
   'package.json': (buf, answers) => {
     const json = JSON.parse(buf.toString());
     json.name = answers.fullscope;
