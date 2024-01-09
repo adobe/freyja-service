@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/adobe/freyja-service/compare/v1.0.0...v1.0.1) (2024-01-09)
+
+
+### Bug Fixes
+
+* Initial release ([8775e58](https://github.com/adobe/freyja-service/commit/8775e588c77d61c18d374d237c6815216c9d57af))
+
 # 1.0.0 (2024-01-09)
 
 
