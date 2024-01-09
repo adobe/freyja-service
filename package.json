@@ -1,12 +1,15 @@
 {
-  "name": "@adobe/create-franklin-service",
-  "version": "3.0.32",
+  "name": "@adobe/create-freyja-service",
+  "version": "1.0.0",
   "private": false,
-  "description": "Create Franklin Service",
+  "description": "Create Freyja Service",
   "main": "src/index.js",
   "type": "module",
   "bin": {
-    "create-franklin-service": "create-franklin-service.js"
+    "create-freyja-service": "create-freyja-service.js"
+  },
+  "publishConfig": {
+    "registry": "https://artifactory-uw2.adobeitc.com/artifactory/api/npm/npm-freyja-release/"
   },
   "scripts": {
     "test": "c8 mocha -i -g 'Post-Deploy' ",
@@ -23,14 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adobe/franklin-service.git"
+    "url": "https://github.com/adobe/freyja-service.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/adobe/franklin-service/issues"
+    "url": "https://github.com/adobe/freyja-service/issues"
   },
-  "homepage": "https://github.com/adobe/franklin-service#readme",
+  "homepage": "https://github.com/adobe/freyja-service#readme",
   "dependencies": {
     "@adobe/create-franklin-library": "3.0.11",
     "@adobe/fetch": "4.1.1",

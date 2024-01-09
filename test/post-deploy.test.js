@@ -12,20 +12,25 @@
 
 /* eslint-env mocha */
 import assert from 'assert';
-import { h1NoCache } from '@adobe/fetch';
+import { noCache } from '@adobe/fetch';
 import { createTargets } from './post-deploy-utils.js';
 
 createTargets().forEach((target) => {
   describe(`Post-Deploy Tests (${target.title()})`, () => {
-    const fetchContext = h1NoCache();
+    const fetchContext = noCache();
     const { fetch } = fetchContext;
 
-    afterEach(() => {
-      fetchContext.reset();
+    after(async () => {
+      await fetchContext.reset();
+    });
+
+    after(async () => {
+      await fetchContext.reset();
     });
 
     it('returns the status of the function', async () => {
       const url = target.url('/_status_check/healthcheck.json');
+      console.log(url);
       const res = await fetch(url);
       assert.strictEqual(res.status, 200);
       const json = await res.json();
@@ -42,9 +47,10 @@ createTargets().forEach((target) => {
     }).timeout(50000);
 
     it('invokes the function', async () => {
+      console.log(target.url('/'));
       const res = await fetch(target.url('/'));
       assert.strictEqual(res.status, 200);
-      assert.fail('not ready yet');
+      assert.strictEqual(await res.text(), 'Hello, world.');
     }).timeout(50000);
   });
 });

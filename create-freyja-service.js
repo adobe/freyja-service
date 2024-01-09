@@ -21,7 +21,7 @@ function setValue(node, val) {
 }
 
 // eslint-disable-next-line no-console
-console.log('Creating a new Franklin Service');
+console.log('Creating a new Freyja Service');
 init(resolve(fileURLToPath(import.meta.url), '..'), {
   'dot-circleci/config.yml': (buf, answers) => {
     const doc = yaml.parseDocument(buf.toString());
@@ -47,7 +47,8 @@ init(resolve(fileURLToPath(import.meta.url), '..'), {
     json.bugs.url = `https://github.com/${answers.fullname}/issues`;
     json.homepage = `https://github.com/${answers.fullname}#readme`;
 
-    json.wsk.name = `helix-services/${answers.name.replace(/franklin-/, '')}@\${version}`;
+    json.wsk.name = `freyja/${answers.name}@\${version}`;
+    json.scripts.logs = `aws logs tail /aws/lambda/freyja--${answers.fullname}`;
 
     delete json.files;
 
@@ -56,11 +57,11 @@ init(resolve(fileURLToPath(import.meta.url), '..'), {
   'README.md': (buf, answers) => {
     const shortname = answers.name.replace('helix-', '');
     const updated = buf.toString()
-      .replace(/@adobe\/helix-service/g, answers.fullscope)
-      .replace(/Franklin Service/g, answers.title)
-      .replace(/An example service to be used in and with Project Franklin/g, answers.description)
-      .replace(/franklin-services\/service/g, `franklin-services/${shortname}`)
-      .replace(/adobe\/franklin-service/g, answers.fullname);
+      .replace(/@freyja\/freyja-service/g, answers.fullscope)
+      .replace(/Freyja Service/g, answers.title)
+      .replace(/An example service to be used in and with Project Freyja/g, answers.description)
+      .replace(/freyja\/service/g, `freyja/${shortname}`)
+      .replace(/adobe\/freyja-service/g, `/adobe/${answers.fullname}`);
     return Buffer.from(updated);
   },
   'dot-releaserc.cjs': (buf) => buf,
