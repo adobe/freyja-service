@@ -42,7 +42,7 @@ init(resolve(fileURLToPath(import.meta.url), '..'), {
       .replace(/Freyja Service/g, answers.title)
       .replace(/An example service to be used in and with Project Freyja/g, answers.description)
       .replace(/freyja\/service/g, `freyja/${shortname}`)
-      .replace(/adobe\/freyja-service/g, `/adobe/${answers.fullname}`);
+      .replace(/adobe\/freyja-service/g, `${answers.fullname}`);
     return Buffer.from(updated);
   },
   'dot-releaserc.cjs': (buf) => buf,
