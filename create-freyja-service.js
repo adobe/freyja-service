@@ -20,6 +20,7 @@ init(resolve(fileURLToPath(import.meta.url), '..'), {
   'dot-circleci/config.yml': (buf) => buf,
   'dot-renovaterc.json': (buf) => buf,
   'dot-npmrc': (buf) => buf,
+  'dot-nycrc': (buf) => buf,
   'package.json': (buf, answers) => {
     const json = JSON.parse(buf.toString());
     json.name = answers.fullscope;
