@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/adobe/freyja-service/compare/v1.1.3...v1.1.4) (2024-01-19)
+
+
+### Bug Fixes
+
+* semantic release workflow and codecov ([20853db](https://github.com/adobe/freyja-service/commit/20853db6ea3945279e27a7e0ff58833909a340ac))
+
 ## [1.1.3](https://github.com/adobe/freyja-service/compare/v1.1.2...v1.1.3) (2024-01-11)
 
 
